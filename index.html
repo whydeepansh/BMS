@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=<tag:charset />">
     <link rel="icon" href="assests/images/favicon.ico" sizes="16x16">
+    <link href="//db.onlinewebfonts.com/c/037b1b6f93bfb633cebe6ddc8a483b83?family=Roboto" rel="stylesheet" type="text/css"/>
     <meta charset="UTF-8">
     <meta name="description" content="Online Movie Show Finder">
     <meta name="keywords" content="Movies, Online Movie Show">
@@ -14,9 +15,13 @@
     <link rel="stylesheet" href="assests/css/slick.css">
     <script type="text/javascript" src="assests/js/jquery.js" ></script>
     <script type="text/javascript" src="assests/js/slick.min.js" ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+    <div class="desktop-header desktop-only">  
       <div class="header-container header-top">
         <div class="header-inner-wrap  d-flex justify-content-between align-center">
             <div class="left-wrap d-flex">
@@ -48,7 +53,7 @@
       <div class="header-container header-btm">
         <div class="header-inner-wrap">
             <div class="header-menu">
-                <div class="desktop-menu d-flex justify-content-between">
+                <div class="desktop-menu d-flex justify-content-between align-center">
                     <div class="left-headermenu-container d-flex">
                         <ul>
                             <li><a href="#">Movies</a></li>
@@ -72,8 +77,43 @@
             </div>
         </div>
       </div> 
+    </div>  
+    <div class="mob-only">
+        <div class="mobile-header d-flex align-center justify-content-between">
+            <div class="head-wrap d-flex flex-column">
+                <div class="head">It All Starts Here!</div>
+                <div class="desc d-flex align-center">Bhopal<span></span></div>
+            </div>
+            <div class="right-wrap d-flex align-center">
+                <div class="btn d-flex align-center">Use App</div>
+                <div class="search-icon"></div>
+            </div>    
+        </div>
+        <div class="category-wrap">
+            <div class="img-wrap">
+                <img src="assests\images\mov-cat.avif" alt="">
+            </div>
+            <div class="img-wrap">
+                <img src="assests\images\stream-cat.avif" alt="">
+            </div>
+            <div class="img-wrap">
+                <img src="assests\images\com-cat.avif" alt="">
+            </div>
+            <div class="img-wrap">
+                <img src="assests\images\spo-cat.avif" alt="">
+            </div>
+            <div class="img-wrap">
+                <img src="assests\images\online-cat.avif" alt="">
+            </div>
+            <div class="img-wrap">
+                <img src="assests\images\work-cat.avif" alt="">
+            </div>
+            <div class="img-wrap">
+                <img src="assests\images\all-cat.avif" alt="">
+            </div>
+        </div>
+    </div>       
     </header>
-
     <div class="main-section">      
         <div class="main-component-layout">
           <div class="main-component-container">
