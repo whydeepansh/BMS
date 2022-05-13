@@ -56,21 +56,21 @@
                 <div class="desktop-menu d-flex justify-content-between align-center">
                     <div class="left-headermenu-container d-flex">
                         <ul>
-                            <li><a href="#">Movies</a></li>
-                            <li><a href="#">Stream</a><span class="mini_txt">NEW</span></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Plays</a></li>
-                            <li><a href="#">Sports</a></li>
-                            <li><a href="#">Activities</a></li>
-                            <li><a href="#">Buzz</a></li>
+                            <li spacing="compact"><a href="#">Movies</a></li>
+                            <li spacing="compact"><a href="#">Stream</a><span class="mini_txt">NEW</span></li>
+                            <li spacing="compact"><a href="#">Events</a></li>
+                            <li spacing="compact"><a href="#">Plays</a></li>
+                            <li spacing="compact"><a href="#">Sports</a></li>
+                            <li spacing="compact"><a href="#">Activities</a></li>
+                            <li spacing="compact"><a href="#">Buzz</a></li>
                         </ul>
                     </div>
                     <div class="right-headermenu-container d-flex">
                         <ul class="menu">
-                            <li><a href="#">ListYourShow</a><span class="mini_txt">NEW</span></li>
-                            <li><a href="#">Corporates</a></li>
-                            <li><a href="#">Offers</a></li>
-                            <li><a href="#">Gift Cards</a></li>
+                            <li spacing="compact"><a href="#">ListYourShow</a><span class="mini_txt">NEW</span></li>
+                            <li spacing="compact"><a href="#">Corporates</a></li>
+                            <li spacing="compact"><a href="#">Offers</a></li>
+                            <li spacing="compact"><a href="#">Gift Cards</a></li>
                         </ul>
                     </div>
                 </div>
@@ -151,12 +151,15 @@
           <div class="movies-section-wrap">
             <div class="main-component-container">
                 <div class="promo-banner">
-                    <div class="img-wrap">
+                    <div class="img-wrap desktop-only">
                         <img src="assests/images/coindcx.avif" alt="coindcx">
+                    </div>
+                    <div class="img-wrap mob-only">
+                        <img src="assests/images/coindcx-mob.avif" alt="coindcx">
                     </div>
                 </div>
                 <div class="main-title">Recommended Movies</div>
-                <ul class="post-wrap d-flex justify-content-between flex-wrap">
+                <ul class="post-slider post-wrap d-flex justify-content-between flex-wrap">
                     <li class="post-item">
                         <a href="#" class="banneranchor">
                             <div class="img-wrap desktop-thumb">
@@ -250,6 +253,15 @@
     $(document).ready(function(){
         $('.cat-slider').slick({
             slidesToShow: 5,
+            dots:false,
+            arrows:false,
+            infinite: false
+        });
+    });
+
+    $(document).ready(function(){
+        $('.post-slider').slick({
+            slidesToShow: 3,
             dots:false,
             arrows:false,
             infinite: false
