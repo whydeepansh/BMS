@@ -89,35 +89,51 @@
                 <div class="search-icon"></div>
             </div>    
         </div>
-        <div class="category-wrap">
-            <div class="img-wrap">
-                <img src="assests\images\mov-cat.avif" alt="">
-            </div>
-            <div class="img-wrap">
-                <img src="assests\images\stream-cat.avif" alt="">
-            </div>
-            <div class="img-wrap">
-                <img src="assests\images\com-cat.avif" alt="">
-            </div>
-            <div class="img-wrap">
-                <img src="assests\images\spo-cat.avif" alt="">
-            </div>
-            <div class="img-wrap">
-                <img src="assests\images\online-cat.avif" alt="">
-            </div>
-            <div class="img-wrap">
-                <img src="assests\images\work-cat.avif" alt="">
-            </div>
-            <div class="img-wrap">
-                <img src="assests\images\all-cat.avif" alt="">
-            </div>
+        <div class="mobile-category-wrap slick-slider d-flex">
+            <div class="cat-slider">
+                <a href="#">
+                    <div class="img-wrap">
+                        <img src="assests\images\mov-cat.avif" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img-wrap">
+                        <img src="assests\images\stream-cat.avif" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img-wrap">
+                        <img src="assests\images\com-cat.avif" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img-wrap">
+                        <img src="assests\images\spo-cat.avif" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img-wrap">
+                        <img src="assests\images\online-cat.avif" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img-wrap">
+                        <img src="assests\images\work-cat.avif" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img-wrap">
+                        <img src="assests\images\all-cat.avif" alt="">
+                    </div>
+                </a>
+            </div>    
         </div>
     </div>       
     </header>
     <div class="main-section">      
         <div class="main-component-layout">
           <div class="main-component-container">
-            <div class="slick-slider">
+            <div class="banner-slider">
                 <div class="slick-slide"> 
                     <a href="#">
                         <div class="img-wrap"><img src="assests/images/slider_1.avif" alt="slider_1">
@@ -143,7 +159,7 @@
                 <ul class="post-wrap d-flex justify-content-between flex-wrap">
                     <li class="post-item">
                         <a href="#" class="banneranchor">
-                            <div class="img-wrap desktop-thumbnail">
+                            <div class="img-wrap desktop-thumb">
                                 <img src="assests/images/movie_1.avif" alt="movie_1"> 
                             </div>
                             <div class="post-content">
@@ -158,7 +174,7 @@
                     </li>
                     <li class="post-item">
                         <a href="#" class="banneranchor">
-                            <div class="img-wrap desktop-thumbnail">
+                            <div class="img-wrap desktop-thumb">
                                 <img width="400" height="660" src="assests/images/movie_2.avif" alt="movie_2" loading="lazy"> 
                             </div>
                             <div class="post-content">
@@ -173,7 +189,7 @@
                     </li>
                     <li class="post-item">
                         <a href="#" class="banneranchor">
-                            <div class="img-wrap desktop-thumbnail">
+                            <div class="img-wrap desktop-thumb">
                                 <img width="400" height="660" src="assests/images/movie_3.avif" alt="movie_3" loading="lazy"> 
                             </div>
                             <div class="post-content">
@@ -188,7 +204,7 @@
                     </li>
                     <li class="post-item">
                         <a href="#" class="banneranchor">
-                            <div class="img-wrap desktop-thumbnail">
+                            <div class="img-wrap desktop-thumb">
                                 <img width="400" height="660" src="assests/images/movie_4.avif" alt="movie_4" loading="lazy"> 
                             </div>
                             <div class="post-content">
@@ -203,7 +219,7 @@
                     </li>
                     <li class="post-item">
                         <a href="#" class="banneranchor">
-                            <div class="img-wrap desktop-thumbnail">
+                            <div class="img-wrap desktop-thumb">
                                 <img width="400" height="660" src="assests/images/movie_5.avif" alt="movie_5" loading="lazy"> 
                             </div>
                             <div class="post-content">
@@ -228,7 +244,16 @@
 </footer>
 <script type="text/javascript">
     $(document).ready(function(){
-      $('.slick-slider').slick();
+      $('.banner-slider').slick();
+    });
+
+    $(document).ready(function(){
+        $('.cat-slider').slick({
+            slidesToShow: 5,
+            dots:false,
+            arrows:false,
+            infinite: false
+        });
     });
 </script>
 </body>
