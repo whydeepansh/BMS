@@ -133,7 +133,7 @@
     <div class="main-section">      
         <div class="main-component-layout">
           <div class="main-component-container">
-            <div class="banner-slider">
+            <div class="banner-slider desktop-only">
                 <div class="slick-slide"> 
                     <a href="#">
                         <div class="img-wrap"><img src="assests/images/slider_1.avif" alt="slider_1">
@@ -143,6 +143,32 @@
                 <div class="slick-slide"> 
                     <a href="#">
                         <div class="img-wrap"><img src="assests/images/slider_2.avif" alt="slider_2">
+                        </div>
+                    </a>
+                </div>  
+            </div>
+            <div class="banner-slider mob-only">
+                <div class="slick-slide"> 
+                    <a href="#">
+                        <div class="img-wrap"><img src="assests/images/mob-slider-1.avif" alt="slider_1">
+                        </div>
+                    </a>
+                </div>
+                <div class="slick-slide"> 
+                    <a href="#">
+                        <div class="img-wrap"><img src="assests/images/mob-slider-2.avif" alt="slider_2">
+                        </div>
+                    </a>
+                </div>  
+                <div class="slick-slide"> 
+                    <a href="#">
+                        <div class="img-wrap"><img src="assests/images/mob-slider-3.avif" alt="slider_3">
+                        </div>
+                    </a>
+                </div>  
+                <div class="slick-slide"> 
+                    <a href="#">
+                        <div class="img-wrap"><img src="assests/images/mob-slider-2.avif" alt="slider_4">
                         </div>
                     </a>
                 </div>  
@@ -261,7 +287,6 @@
 
     $(document).ready(function(){
         $('.post-slider').slick({
-            slidesToShow: 3,
             dots:false,
             arrows:false,
             infinite: false
